@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navigation bar */
+
+nav {
+  position: sticky;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  min-height: 5em;
+  margin-bottom: 2em;
+}
+
+.nav-title {
+  letter-spacing: 2px;
+  font-size: 2em;
+  margin: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.nav-links ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline;
+  justify-content: space-around;
+}
+
+.nav-links li a {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.nav-burger {
+  margin-top: 5px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.nav-burger .bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* main section */
+
+main {
+  overflow: auto;
+  padding: 20px;
+}
+
+.content {
+  float: left;
+  width: 70%;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.logo-image {
+  flex-basis: 50%;
+}
+
+.logo-image img {
+  width: 250px;
+  height: 250px;
+}
+
+.tentang h2 {
+  text-align: center;
+}
+
+.text-tentang {
+  margin: auto;
+  padding: 15px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.flex-row-tentang {
+  display: flex;
+  flex-direction: row;
+}
+
+.kota_tujuan h2 {
+  text-align: center;
+}
+
+.kota {
+  width: 40%;
+}
+
+.kota img {
+  width: 100%;
+}
+
+.kota h2 {
+  text-align: center;
+  padding: 1em;
+  margin-left: 15px;
+}
+
+.col-kota_tujuan {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-kota_tujuan {
+  display: flex;
+  flex-direction: row;
+}
+
+.partner h2 {
+  text-align: center;
+}
+
+.row-partner {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-partner {
+  width: 34%;
+  text-align: center;
+}
+
+.item-partner img {
+  width: 50%;
+}
+
+footer {
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f5fa;
+}
+/* asside section */
+
+.biodata {
+  float: right;
+  width: 29%;
+  text-align: center;
+  padding-left: 20px;
+}
+.biodata img {
+  width: 50%;
+}
+figure {
+  margin: 2em;
+}
+.tabel {
+  padding: 10%;
+}
+
+@media (max-width: 1044px) {
+  .nav-burger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    width: 100%;
+  }
+
+  .nav-links li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+
+  .content,
+  .biodata {
+    width: 100%;
+    padding: 0;
+  }
+}
